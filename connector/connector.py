@@ -202,7 +202,7 @@ class ConnectorUnit(object):
                       model than the current one
         :type model: str
         """
-        if model is None or model == self.model._name:
+        if model is None or model == self._model_name:
             env = self.connector_env
         else:
             env = self.connector_env.create_environment(
